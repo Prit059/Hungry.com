@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Login - Food Gallery</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and full-page background settings */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        /* Blurred background using pseudo-element */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('canteen.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(8px); /* Blur the entire background */
+            z-index: -1; /* Ensure it stays behind the content */
+        }
+
+        /* Login box settings */
+        .login {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .login__img-container {
+            margin-bottom: 20px;
+        }
+
+        .login__img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-family: "Arial Black", sans-serif;
+            color: #f80909;
+        }
+
+        .login__content {
+            margin-bottom: 20px;
+        }
+
+        .login__box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .login__box i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        .login__box-input {
+            flex-grow: 1;
+        }
+
+        .login__input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login__label {
+            font-size: 12px;
+            margin-top: 5px;
+            display: block;
+            text-align: left;
+        }
+
+        .login__check {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .login__check-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .login__check-input {
+            margin-right: 5px;
+        }
+
+        .login__check-label {
+            font-size: 14px;
+        }
+
+        .login__button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login__button:hover {
+            background-color: #0056b3;
+        }
+
+        .login__register {
+            margin-top: 20px;
+        }
+
+        .login__register a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login__register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <div class="login__img-container">
+            <img src="canteen.jpg" alt="login image" class="login__img">
+        </div>
+
+        <form action="" class="login__form">
+            <h1>Welcome To <span><b>Food Gallery</b></span></h1>
+            
+            <div class="login__content">
+
+                <div class="login__box">
+                    <i class="ri-user-line"></i>
+                    <div class="login__box-input">
+                        <input type="text" required class="login__input" id="login-name" placeholder=" ">
+                        <label for="login-name" class="login__label">Username</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-mail-line"></i>
+                    <div class="login__box-input">
+                        <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                        <label for="login-email" class="login__label">Email</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-lock-2-line"></i>
+                    <div class="login__box-input">
+                        <input type="password" required class="login__input" id="login-pass" placeholder=" " minlength="6">
+                        <label for="login-pass" class="login__label">Password</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="login__check">
+                <div class="login__check-group">
+                    <input type="checkbox" class="login__check-input" id="login-check">
+                    <label for="login-check" class="login__check-label">Remember me</label>
+                </div>
+                <a href="forgot.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <p class="login__register">Don't have an account? 
+                <a href="register.html">Register here</a>
+            </p>
+        </form>
+    </div>
+    
+    <script src="L.js"></script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="C.css">
+    <title>Login - Food Gallery</title>
+</head>
+<body>
+    <div class="login">
+        <img src="canteen.jpg" alt="login image" class="login__img">
+        
+        <form action="" class="login__form">
+            <h1 class="login__title">Welcome to <span><b>Food Gallery</b></span></h1>
+            
+            <div class="login__content">
+
+                <div class="login__box">
+                    <i class="ri-user-line"></i>
+                    <div class="login__box-input">
+                        <input type="text" required class="login__input" id="login-name" placeholder=" ">
+                        <label for="login-name" class="login__label">Username</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-mail-line"></i>
+                    <div class="login__box-input">
+                        <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                        <label for="login-email" class="login__label">Email</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-lock-2-line login__icon"></i>
+                    <div class="login__box-input">
+                        <input type="password" required class="login__input" id="login-pass" placeholder=" " minlength="6">
+                        <label for="login-pass" class="login__label">Password</label>
+                        <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="login__check">
+                <div class="login__check-group">
+                    <input type="checkbox" class="login__check-input" id="login-check">
+                    <label for="login-check" class="login__check-label">Remember me</label>
+                </div>
+                <a href="forgot.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <p class="login__register">Don't have an account? 
+                <a href="register.html">Register here</a>
+            </p>
+        </form>
+    </div>
+    
+    <script src="L.js"></script>
+</body>
+</html>
+
+-->

@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+main{
+  
+}
+/* h1 */
+h1{
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #5ae2db 0%, #2fd1d1 100%);
+  background: linear-gradient(180deg, #ed382b 0%, #ffffff 120%);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0.5,0.9);
+  border-radius: 10px; 
+}
+h1:hover{
+  color: #ffffff;
+  background: linear-gradient(270deg, #5ae2db 0%, #2fd1d1 100%);
+  background: linear-gradient(180deg, #ed382b 0%, #ffffff 120%);
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+/* menu list */
+.menulist .submenu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  margin: 40px 50px 40px 15px;
+  border-radius: 19px;
+  background-color: chocolate;
+  box-shadow: 0 0 5px rgba(2.5,1.7,1.5,1);
+  justify-content: center;
+}
+.canteen{
+    align-items: center;
+    color: darkmagenta;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 26px;
+    cursor: pointer;
+}
+.canteen:hover{
+  color: #ed382b;
+  transition: 0.3s;
+  text-decoration: underline;
+  background-color: burlywood;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.fastfood .straters h3 span{
+  font-family: "Arvo", serif;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 530px;
+}

@@ -1,0 +1,73 @@
+<div class="fastfood">
+                         
+                        <div class="straters">
+                            <h3>T-Post <p class="price" style="text-align: right">Price</p></h3>
+                             
+                                <div class="sandwich">
+                                  <p class="san">Traditional Tea<p class="p">15/30</p></p>
+                                  <p class="dis">A classic blend of black tea leaves, served hot.</p>
+                                  
+                                  <p class="san">Indian Masala Tea<p class="p">45</p></p>
+                                  <p class="dis">A spiced tea blend with Indian flavors of cardamom, cinnamon, and ginger.</p>
+                                  
+                                  <p class="san">Elaichi Tea<p class="p">50</p></p>
+                                  <p class="dis">A fragrant tea infused with the subtle aroma of cardamom (Elaichi).</p>
+                                  
+                                  <p class="san">Ginger & Pudina Tea<p class="p">50</p></p>
+                                  <p class="dis">A refreshing tea made with ginger and mint (Pudina) for a soothing experience.</p>
+                                  
+                                  <p class="san">Zafran Tea<p class="p">80</p></p>
+                                  <p class="dis">A luxurious blend of tea infused with saffron for a rich and exotic flavor.</p>
+                                  
+                                  <p class="san">Iced Lemon Tea<p class="p">90</p></p>
+                                  <p class="dis">A chilled, tangy lemon tea for a refreshing break.</p>
+                                  
+                                  <p class="san">Blueberry Mint Iced Tea<p class="p">95</p></p>
+                                  <p class="dis">A cool and fruity iced tea with the flavors of blueberry and mint.</p>
+                                  
+                                  <p class="san">Black Tea<p class="p">40</p></p>
+                                  <p class="dis">A simple, strong black tea without milk.</p>
+                                  
+                                  <p class="san">Healthy Green Tea<p class="p">55</p></p>
+                                  <p class="dis">A soothing and healthy cup of green tea, rich in antioxidants.</p>
+                                  
+                                  <p class="san">Black Coffee<p class="p">45</p></p>
+                                  <p class="dis">A robust and strong cup of black coffee for purists.</p>
+                                  
+                                  <p class="san">Hot Vanilla Coffee<p class="p">60</p></p>
+                                  <p class="dis">A smooth coffee with a hint of sweet vanilla flavor.</p>
+                                  
+                                  <p class="san">Classic Cold Coffee<p class="p">110</p></p>
+                                  <p class="dis">A chilled blend of coffee and milk for a refreshing cold coffee experience.</p>
+                                  
+                                  <p class="san">Cappuccino<p class="p">130</p></p>
+                                  <p class="dis">A rich cappuccino with espresso, steamed milk, and a thick layer of foam.</p>
+                                  
+                                  <p class="san">Mocha<p class="p">130</p></p>
+                                  <p class="dis">A decadent mocha combining espresso and chocolate syrup with steamed milk.</p>
+                                  
+                                  <p class="san">Caramel Latte<p class="p">130</p></p>
+                                  <p class="dis">A sweet and creamy latte with a touch of caramel syrup.</p>
+                                  
+                                  <p class="san">Hot Chocolate<p class="p">95</p></p>
+                                  <p class="dis">A rich and comforting cup of hot chocolate.</p>
+                                  
+                                  <p class="san">Fruit Punch<p class="p">65</p></p>
+                                  <p class="dis">A vibrant and refreshing mix of fruit juices for a punchy drink.</p>
+                                  
+                                  <p class="san">Mojito<p class="p">65</p></p>
+                                  <p class="dis">A cool and minty mojito with a citrus twist, perfect for warm days.</p>
+                                  
+                                  <p class="san">Strawberry Milkshake<p class="p">110</p></p>
+                                  <p class="dis">A sweet and creamy milkshake bursting with fresh strawberry flavor.</p>
+                                  
+                                  <p class="san">Chocolate Milkshake<p class="p">120</p></p>
+                                  <p class="dis">A rich and indulgent chocolate milkshake for chocolate lovers.</p>
+                                  
+                                  <p class="san">Oreo Milkshake<p class="p">130</p></p>
+                                  <p class="dis">A creamy milkshake with crushed Oreo cookies blended in.</p>
+                                  
+                                </div>
+                        </div>
+                    </div>
+       

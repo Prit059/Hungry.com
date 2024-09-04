@@ -1,0 +1,122 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('menu1.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-image: url('menu1.avif'); /* Set the image as background */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Make it stay fixed when scrolling */
+  color: white; /* Ensure text is readable */
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px); /* Optional: Create a blur effect for text readability */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  font-family: "Arvo", serif;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.highlight {
+  color: #f39c12;
+}
+
+.menulist {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.submenu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.canteen a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  font-size: 20px;
+  margin-left: 24px;
+  border-radius: 5px;
+  font-family: 'arvo', serif;
+  transition: background-color 0.3s ease;
+}
+
+.canteen a:hover {
+  text-decoration: underline;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section {
+  flex-basis: 45%;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+h2 {
+  font-family: "Arvo", serif;
+  font-size: 1.8em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item p {
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  font-family: 'Arvo',serif;
+}
+
+.price {
+  font-size: 20px;
+  float: right;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.description {
+  font-size: 5px;
+  font-weight: lighter;
+  color: #020202;
+  margin-top: 5px;
+  margin-left: 10px;
+  line-height: 1.5;
+}

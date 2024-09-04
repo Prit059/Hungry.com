@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="C1.css">
+
+      <title>Register Page</title>
+   </head>
+   <body>
+      <div class="login">
+         <img src="canteen.jpg" alt="login image" class="login__img">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">Register</h1>
+
+            <div class="login__content">
+
+                <div class="login__box">
+                    <i class="ri-user-line"></i>
+  
+                    <div class="login__box-input">
+                       <input type="text" required class="login__input" id="login-name" placeholder=" ">
+                       <label for="login-name" class="login__label">First Name</label>
+                    </div>
+                 </div>
+                 <div class="login__box">
+                  <i class="ri-user-line"></i>
+
+                  <div class="login__box-input">
+                     <input type="text" required class="login__input" id="login-name" placeholder=" ">
+                     <label for="login-name" class="login__label">Last Name</label>
+                  </div>
+               </div>
+               <div class="login__box">
+                <i class="ri-user-line"></i>
+
+                <div class="login__box-input">
+                   <input type="text" required class="login__input" id="login-name" placeholder=" " minlength="4">
+                   <label for="login-name" class="login__label">Username</label>
+                </div>
+             </div>
+             
+             <div class="login__box">
+               <i class="ri-mail-line"></i>
+               
+               <div class="login__box-input">
+                 <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                 <label for="login-email" class="login__label">Email</label>
+                </div>
+              </div>
+              <div class="login__box">
+               <span>☎</span> <!-- Unicode decimal code -->
+
+               <div class="login__box-input">
+                  <input type="text" required class="login__input" id="login-name" placeholder=" " minlength="10">
+                  <label for="login-name" class="login__label">Phone No.</label>
+               </div>
+            </div>
+
+               <div class="login__box">
+                  <i class="ri-lock-2-line login__icon"></i>
+
+                  <div class="login__box-input">
+                     <input type="password" required class="login__input" id="login-pass" placeholder=" " minlength="8">
+                     <label for="login-pass" class="login__label">Password</label>
+                     
+                     <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                  </div>
+               </div>
+
+               <!-- <div class="login__box">
+                  <i class="ri-smartphone-line"></i>
+
+                <div class="login__box-input">
+                   <input type="" required class="login__input" id="login-number" placeholder=" ">
+                   <label for="login-number" class="login__label">Phone Number</label>
+                </div>
+             </div> -->
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-group">
+                  <input type="checkbox" class="login__check-input" id="login-check">
+                  <label for="login-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button"><a href="Project1.html">Register</a></button>
+         </form>
+      </div>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="L.js"></script>
+   </body>
+</html>

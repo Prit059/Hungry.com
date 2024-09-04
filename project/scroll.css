@@ -1,0 +1,39 @@
+.scroll-container {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+   /* Optional: background color for container */
+  padding: 10px; /* Optional: padding to provide space around text */
+  
+}
+
+.scroll-text {
+  display: inline-block;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  /* padding-left: 100%; Start position of text */
+  /* animation: scroll-left 15s linear infinite; */
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial;
+  font-size: 20px;
+}
+.scroll-text:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 0.3s ease;
+}
+.secondary{
+  /* font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial; */
+  /* font-size: 20px; */
+  /* animation: scroll-left 15s linear infinite; */
+  /* animation-delay: 4s; */
+  
+}
+/* @keyframes scroll-left {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+} */
