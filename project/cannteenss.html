@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menus.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Restaurant Menus</title>
+</head>
+<body>
+  <h1 class="fixlogo"><a href="Project1.html" class="mainlogo"> <img class="main_img">HUNGRY.COM</a></h1>
+  <div class="container">
+    <div class="sidebar">
+      <h4>Filter by cuisines</h4>
+      <input type="checkbox" id="burger" class="filter-checkbox"> <label for="burger">NIDHISHA</label> <br>
+      <input type="checkbox" id="thali" class="filter-checkbox"> <label for="thali">Tandoori Tadka</label> <br>
+      <input type="checkbox" id="biryani" class="filter-checkbox"> <label for="biryani">Punjab Rasoi</label> <br>
+      <input type="checkbox" id="momos" class="filter-checkbox"> <label for="momos">Spicy Treat</label> <br>
+      <input type="checkbox" id="desi" class="filter-checkbox"> <label for="desi">Desi Vibes</label> <br>
+      <input type="checkbox" id="north" class="filter-checkbox"> <label for="north">North Feast</label> <br>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="main-content">
+      <div class="search-bar">
+        <input type="text" placeholder="Search by restaurant & cuisines">
+        <button>Search</button>
+      </div>
+      
+      <div class="cards-row">
+        <div class="card" data-category="burger">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="NIDHISHA">
+          <h3>NIDHISHA</h3>
+          <p><i style='font-size:24px' class='fas'>&#x2302;</i> College: Charusat University</p>
+          <p><i class="material-icons">&#xe55f;</i> Location </p>
+          <div class="tags">
+            <span>Jalebi</span><span>Laddu</span><span>Thali</span><span>Indian</span>
+          </div>
+          <button><a href="menu.html">View Menus</a></button>
+        </div>
+
+        <div class="card" data-category="thali">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Tandoori Tadka">
+          <h3>Tandoori Tadka</h3>
+          <p><i style='font-size:24px' class='fas'>&#x2302;</i> College: Charusat University</p>
+          <p><i class="material-icons">&#xe55f;</i> Location </p>
+          <div class="tags">
+            <span>Biryani</span><span>Roti</span><span>Thali</span>
+          </div>
+          <button><a href="menu.html">View Menus</a></button>
+        </div>
+
+        <div class="card" data-category="biryani">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Punjab Rasoi">
+          <h3>Punjab Rasoi</h3>
+          <p><i style='font-size:24px' class='fas'>&#x2302;</i> College: Charusat University</p>
+          <p><i class="material-icons">&#xe55f;</i> Location </p>
+          <div class="tags">
+            <span>Momos</span><span>Rice</span><span>Dal</span>
+          </div>
+          <button><a href="menu.html">View Menus</a></button>
+        </div>
+      </div>
+
+      <div class="cards-row">
+        <div class="card" data-category="momos">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Spicy Treat">
+          <h3>Spicy Treat</h3>
+          <p><i style='font-size:24px' class='fas'>&#x2302;</i> College: Charusat University</p>
+          <p><i class="material-icons">&#xe55f;</i> Location </p>
+          <div class="tags">
+            <span>Burger</span><span>Fries</span><span>Indian</span>
+          </div>
+          <button><a href="tpost.html">View Menus</a></button>
+        </div>
+
+        <div class="card" data-category="desi">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Desi Vibes">
+          <h3>Desi Vibes</h3>
+          <p><i style='font-size:24px' class='fas'>&#x2302;</i> College: Charusat University</p>
+          <p><i class="material-icons">&#xe55f;</i> Location </p>
+          <div class="tags">
+            <span>Thali</span><span>Biryani</span><span>Paneer</span>
+          </div>
+          <button><a href="pizza.html">View Menus</a></button>
+        </div>
+
+        <div class="card" data-category="north">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="North Feast">
+          <h3>North Feast</h3>
+          <p><i style='font-size:24px' class='fas'>&#x2302;</i> College: Charusat University</p>
+          <p><i class="material-icons">&#xe55f;</i> Location </p>
+          <div class="tags">
+            <span>Kebabs</span><span>Roti</span><span>Rice</span>
+          </div>
+          <button><a href="colddrink.html">View Menus</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateDisplay() {
+      let anyChecked = false;
+
+      document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+        if (checkbox.checked) {
+          anyChecked = true;
+        }
+      });
+
+      document.querySelectorAll('.card').forEach(card => {
+        if (!anyChecked) {
+          card.style.display = 'block';  // Show all cards if no filter is selected
+        } else {
+          const category = card.getAttribute('data-category');
+          const matchingCheckbox = document.getElementById(category);
+          card.style.display = matchingCheckbox && matchingCheckbox.checked ? 'block' : 'none';
+        }
+      });
+    }
+
+    document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+      checkbox.addEventListener('change', updateDisplay);
+    });
+
+    document.getElementById('reset').addEventListener('click', function() {
+      document.querySelectorAll('.filter-checkbox').forEach(checkbox => checkbox.checked = false);
+      updateDisplay();
+    });
+
+    // Initial display setup
+    updateDisplay();
+  </script>
+</body>
+</html>

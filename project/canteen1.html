@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="canteen.css">
+  
+  <link rel="stylesheet" href="Project1.css">
+  <title>Canteen</title>
+</head>
+<body>
+  <main>
+    <header>
+      <a href="#" class="mainlogo">HUNGRY.COM</a>
+      <div class="bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+          <li><a href="#home" class="link" id="home1">Home</a></li>
+          <li><a href="#" class="link">Order</a></li>
+          <li class="dropdown">
+              <a href="menus.html" target="_blank" class="link">Menu</a>
+              <ul class="dropdown-content">
+                  <li><a target="_blank" href="menufrom.html">NidhiSha</a></li>
+                  <li><a target="_blank" href="tpost.html">T-Post</a></li>
+                  <li><a target="_blank" href="pizza.html">Pizza</a></li>
+                  <li><a target="_blank" href="colddrink.html">Cold-Drink</a></li>
+              </ul>
+          </li>
+          <li><a href="Login.html" target="_blank" class="link">Login</a></li>
+      </ul>
+  </header>
+  <section>
+    
+    <div class="nmanu">
+      <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="">
+      
+      <h2>NidhiSha Canteen</h2>
+      <div class="tags">
+        <span>Sandwich</span><span>Fanky</span><span>Thali</span><span>Fast-Food</span>
+      </div>
+      <p class="time">&#128345 Time: <span>9 AM To 4 PM</span></p>
+    </div>
+  </section>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search Food name">
+    <button onclick="searchFood()">Search</button>
+  </div>
+   <section>
+    
+     <h1>Available Menus</h1>
+    <div class="mast">
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1C3BRz51q9dgvqt3w8R-EpvC8z4fNq8XJzw&s" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Red Sandwich</h3>
+          </div>
+          <div class="d">
+            <p> A crispy and savory Red Sandwich filled hot and crispy. </p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 100</span> </p>
+          </div>
+          <div class="atc">
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIe-JmWBmXx1GbqHI7JwBUyDm70w1eCN_uA&s" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Green Sandwich</h3>
+          </div>
+          <div class="d">
+            <p> A healthy and delicious sandwich filled with fresh greens and herbs.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 110</span> </p>
+          </div>
+          <div class="atc">
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://i.ytimg.com/vi/xBtcUBFfUVs/maxresdefault.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Reg Club Sandwich</h3>
+          </div>
+          <div class="d">
+            <p>A classic club sandwich with layers of vegetables, cheese, and spreads. </p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 110</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>  
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://c.ndtvimg.com/2023-06/nl2hone_grilled-sandwich-3_625x300_08_June_23.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Paneer Tandoori Sandwich</h3>
+          </div>
+          <div class="d">
+            <p>Grilled sandwich with spicy tandoori paneer and fresh vegetables. </p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 130</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://greenbowl2soul.com/wp-content/uploads/2022/06/paneer-sandwich-1.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Paneer Delight Sandwich</h3>
+          </div>
+          <div class="d">
+            <p>A delightful sandwich with soft paneer and creamy fillings. </p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 120</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://supreme.altervista.org/wp-content/uploads/2024/04/Club-Sandwich-SUPREME.jpeg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Supreme Club Sandwich</h3>
+          </div>
+          <div class="d">
+            <p>A supreme version of the club sandwich with extra layers of veggies and cheese.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 140</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JwVflJ0v6HgiM5I_vwef6GEkEA6bqcBXzw&s" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Indian Sandwich</h3>
+          </div>
+          <div class="d">
+            <p>A fusion sandwich with classic Indian flavors and fresh ingredients. </p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 130</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Italian Club Sandwich</h3>
+          </div>
+          <div class="d">
+            <p> A flavorful sandwich with Italian herbs, cheese, and a variety of vegetables.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 130</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Pahadi Club Sandwich</h3>
+          </div>
+          <div class="d">
+            <p> A rich and filling sandwich inspired by mountain flavors with a special blend of spices.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 260</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Janglee Paneer Sandwich</h3>
+          </div>
+          <div class="d">
+            <p> A spicy and wild combination of paneer and exotic herbs, packed in a sandwich.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 140</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://mariduniya.wordpress.com/wp-content/uploads/2010/05/bhavik-it-parivar-canteen1.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>108 Special</h3>
+          </div>
+          <div class="d">
+            <p> A special sandwich loaded with a variety of flavors, ideal for a hearty meal.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 1250</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://media.gettyimages.com/id/1393616176/photo/veggie-hot-dogs-in-brioche-rolls-with-pickles-onion-and-relishes.jpg?s=612x612&w=0&k=20&c=TfTcbdbS7gCbTexLl-DHxJh-c3GfmyZml_toVTpFb6Y=" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Hot-Dog</h3>
+          </div>
+          <div class="d">
+            <p>Deliciously grilled hot-dog served with fresh condiments.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 80</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfWbZOj14b7aekZqgh6ogWPSAyDyObTT0elQ&s" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Frankie</h3>
+          </div>
+          <div class="d">
+            <p> A tasty combination of frankie with a twist of spices.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 80</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rKqSChDZsDL1fMacD09hrdKOZ4SwDFYysQ&s" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Cheese Frankey</h3>
+          </div>
+          <div class="d">
+            <p>Cheese-loaded Frankey with melting flavors in every bite.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 100</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://www.ticklingpalates.com/wp-content/uploads/2022/03/plain-dosa.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Plane Dosa</h3>
+          </div>
+          <div class="d">
+            <p>A classic plain dosa, light and crispy.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 65</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://i.pinimg.com/736x/2a/c1/51/2ac15169850a766390adcba3a6d28eef.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Masala Dosa</h3>
+          </div>
+          <div class="d">
+            <p> Stuffed with spicy potato filling, served with chutneys.</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 130</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>  
+      <div class="nm">
+        <div class="nmcard">
+          <img src="https://i.ytimg.com/vi/XWBCD_TCtQI/sddefault.jpg" alt="Punjabi Junction">
+          <div class="n">
+            <h3>Chines Dosa</h3>
+          </div>
+          <div class="d">
+            <p> Fusion dosa with Chinese flavors, a must-try!</p>
+          </div>
+          <div class="p">
+            <p> Price : <span class="rupee">₹ 100</span> </p>
+          </div>
+          <div class="atc">
+
+            <button><a href="menu.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+   </section>
+  </main>
+
+  <script>
+    function searchFood() {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const foodItems = document.querySelectorAll('.nm');
+  
+      foodItems.forEach(item => {
+        const foodName = item.querySelector('h3').textContent.toLowerCase();
+  
+        if (foodName.includes(searchInput)) {
+          item.style.display = 'block'; // Show the item
+        } else {
+          item.style.display = 'none'; // Hide the item
+        }
+      });
+    }
+  </script>
+</body>
+</html>
