@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and full-page background settings */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        /* Blurred background using pseudo-element */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('canteen.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(8px); /* Blur the entire background */
+            z-index: -1; /* Ensure it stays behind the content */
+        }
+
+        /* Forgot password box */
+        .forgot-password-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent background */
+            z-index: 1;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #f80707;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: blue;
+            
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Forgot Password Form -->
+    <div class="forgot-password-container">
+        <h1><b>Change Password</b></h1>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required minlength="6">
+
+            <label for="confirm-password">Re-enter New Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+
+            <button type="submit">Confirm</button>
+        </form>
+    </div>
+
+</body>
+</html>

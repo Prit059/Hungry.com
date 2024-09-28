@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reating.css">
+  <title>Food/Drink Review</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Food/Drink Review</h1>
+    </header>
+    <main>
+      <form id="reviewForm">
+        <div class="form-group">
+          <label for="nameInput">Enter your Name:</label>
+          <input type="text" id="nameInput" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="reviewInput">Enter your food/drink experience:</label>
+          <textarea id="reviewInput" placeholder="Your Experience" required></textarea>
+        </div>
+        <button type="button" onclick="saveData()">Submit</button>
+      </form>
+      
+      <section id="savedData" class="saved-data"></section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Food Review. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script>
+    function saveData() {
+      var name = document.getElementById('nameInput').value.trim();
+      var review = document.getElementById('reviewInput').value.trim();
+
+      if (name === '' || review === '') {
+        alert('Please fill in both fields.');
+        return;
+      }
+
+      localStorage.setItem(name, review);
+      alert('Data Saved Successfully');
+      document.getElementById('nameInput').value = '';
+      document.getElementById('reviewInput').value = '';
+
+      showData();
+    }
+
+    function showData() {
+      var savedDataDiv = document.getElementById('savedData');
+      savedDataDiv.innerHTML = '<h2>Saved Reviews:</h2>';
+      var keys = Object.keys(localStorage);
+
+      if (keys.length === 0) {
+        savedDataDiv.innerHTML += '<p>No reviews saved yet.</p>';
+        return;
+      }
+
+      var list = '<ul>';
+      keys.forEach(function(key) {
+        list += `<li><strong>${key}:</strong> ${localStorage.getItem(key)}</li>`;
+      });
+      list += '</ul>';
+
+      savedDataDiv.innerHTML += list;
+    }
+
+    window.onload = showData;
+  </script>
+</body>
+</html>

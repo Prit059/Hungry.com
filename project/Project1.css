@@ -10,7 +10,7 @@
     text-decoration: none;
 }
 body{
-    background-color: #f5f3f0;
+    background-color: #fff;
     /* background: linear-gradient(270deg, #5ae2db 0%, #2fd1d1 100%);
     background: linear-gradient(180deg, #100ab7 0%, #ffffff 110%); */
     /* background-image: url('https://t4.ftcdn.net/jpg/01/98/50/63/240_F_198506301_zS7IDI4YU7kW0zFVagjTwl8AVI7lZvjP.jpg'); */
@@ -18,14 +18,21 @@ body{
     background-attachment: fixed;
 }
 header{
-    background-color: #000;
+    /* background-color: #959090; */
     /* background: linear-gradient(270deg, #5ae2db 0%, #2fd1d1 100%); */
     /* background: linear-gradient(180deg, #210ab7 0%, #ffffff 100%); */
     /* border-radius: 10px; */
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 100%;
+    position: fixed;
+    border: #000 solid;
+    /* top: 0; */
+    /* right: 0; */
+    margin: 7px;
+    width: 99%;
+    height: 100px;
+    /* background blur code */
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.7));
+    background-size: 200% 200%;
+    background-position: 100% 0%;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -48,6 +55,8 @@ header{
 }
 
 .navbar a {
+    font-size: 30px;
+    /* font-family: 'Arvo', arial, helvetica, sans-serif; */
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -59,8 +68,11 @@ header{
     display: none;
     position: absolute;
     /* background-color: #f9f9f9; */
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-size: 200% 200%;
+    background-position: 100% 0%;
     z-index: 1;
+    border-radius: 7px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -74,13 +86,18 @@ header{
 .dropdown-content li a {
     padding: 10px 15px;  /* Add padding for links */
     color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial;
     text-decoration: none;
     display: block;
     width: 100%;
 }
 
 .dropdown-content li a:hover {
-    color: #fff;
+    color: #f07e03;
+    text-decoration: underline;
+    transition: 0.4s;
 }
 
 /* Show the dropdown when hovering over the parent menu */
@@ -100,23 +117,27 @@ header{
 }
 .mainlogo{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(0, 204, 255);
+    color: #fff; 
+    background-color: #07071e;  
+    box-shadow: 0px 2px 6px 1.4px white;
     font-size: 40px;
     font-weight: bold;
     position: relative;
-    padding: 0;
-    margin: 0;
+    padding: 9px;
+    
 }
-.mainlogo{
+/* .mainlogo{
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-}
+} */
 .mainlogo:hover{
-    zoom: 110%;
-    transition: .5s;
+    text-decoration: none;
+    color: #2fd1d1;
+    transform: scale(1.05);
+    box-shadow: 0px 2px 6px 1.4px #2fd1d1;
 }
 .main_img{
     margin: 0px 5px -9.9px;
@@ -141,7 +162,7 @@ header{
 
 .link:hover{
     text-decoration: underline;
-    color: #f88170;
+    color: #2fd1d1;
     transition: .5s;
 }
 
@@ -185,7 +206,7 @@ header{
     padding: 20px;
     font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial;
 }
-section{
+/* section{
     padding: 100px 0 0 60px;
 }
 section .home-text{
@@ -279,7 +300,7 @@ section .home-text{
     background-color: orange;
     transform: scale(1.1);
     transition: 0.4s;
-}
+} */
 
 .about{
     display: grid;
@@ -290,23 +311,23 @@ section .home-text{
 }
 /* add animation in img to scroll the page and images is apper animation add start animation only this time to scroll the page and the animation start and again the scroll and show this page and animation is apper */
 
-.homeimg img{
+/* .homeimg img{
     animation: slide 3s cubic-bezier(0.845, -0.55, 0.999, 2);
-}
+} */
 /* cubic-bezier(0.895, 0.01, 0.675, 0.50) */
 @keyframes slide {
     0% { transform: translateX(-50%); }
     100% { transform: translateX(0%); }
 }
-#home{
+/* #home{ */
     /*if page scroll and show home then image and word in animation */
-    background-image: url(about.png);
+    /* background-image: url(about.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 990px;
-    width: 100%;
+    width: 100%; */
 
-}
+/* } */
 .about{
     background-image: url(f5.png);
     height: 780px;
@@ -390,6 +411,7 @@ section .home-text{
     align-items: center;
     width: 300px;
     height: 100px;
+    
     font-family: "Edu VIC WA NT Beginner", cursive;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -676,6 +698,9 @@ section .home-text{
     font-family: "Arvo", serif;
 }
 /* food gallry */
+.food-gallry{
+    margin-top: 500px;
+}
 .food-gallry img{
     width: 40%;
     height: 400px;
